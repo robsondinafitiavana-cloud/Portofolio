@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============ SEO / META ============ -->
+<title>Dina Fitiavana ROBSON — Software Engineer &amp; Full-Stack Developer</title>
+<meta name="description" content="Portfolio de Dina Fitiavana ROBSON, étudiant en Génie Logiciel à Antananarivo. Développement web full-stack (Django, React), bases de données et Machine Learning.">
+<meta name="keywords" content="Dina Fitiavana ROBSON, Software Engineer, Full-Stack Developer, Django, React, Python, Madagascar, Génie Logiciel">
+<meta name="author" content="Dina Fitiavana ROBSON">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dina Fitiavana ROBSON — Software Engineer & Full-Stack Developer">
+<meta property="og:description" content="Étudiant en Génie Logiciel — développement web, logiciel et Machine Learning. Découvrez mes projets et mon parcours.">
+<meta property="og:image" content="images/profile.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Custom styles -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ======================================================
+     BACKGROUND SCHEMATIC GRID (decorative, fixed layer)
+====================================================== -->
+<div class="blueprint-grid" aria-hidden="true"></div>
+
+<!-- ======================================================
+     NAVBAR
+====================================================== -->
+<nav class="dr-nav" id="drNav">
+  <div class="dr-nav-inner">
+    <a href="#home" class="dr-nav-brand">
+      <span class="brand-tag">&lt;</span>Dina&nbsp;Fitiavana&nbsp;ROBSON<span class="brand-tag">/&gt;</span>
+    </a>
+
+    <button class="dr-nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="dr-nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link-item active" data-section="home">Accueil</a></li>
+      <li><a href="#about" class="nav-link-item" data-section="about">À propos</a></li>
+      <li><a href="#skills" class="nav-link-item" data-section="skills">Compétences</a></li>
+      <li><a href="#projects" class="nav-link-item" data-section="projects">Projets</a></li>
+      <li><a href="#education" class="nav-link-item" data-section="education">Formation</a></li>
+      <li><a href="#experience" class="nav-link-item" data-section="experience">Expérience</a></li>
+      <li><a href="#contact" class="nav-link-item" data-section="contact">Contact</a></li>
+    </ul>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+      <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- ======================================================
+     HERO / ACCUEIL
+====================================================== -->
+<header id="home" class="hero">
+  <div class="hero-lines" aria-hidden="true">
+    <svg viewBox="0 0 1200 800" preserveAspectRatio="none">
+      <path class="circuit-path" d="M0,120 H300 V240 H620" />
+      <path class="circuit-path" d="M1200,600 H860 V420 H540" />
+      <path class="circuit-path" d="M0,700 H180 V520 H460" />
+      <circle class="circuit-node" cx="300" cy="120" r="4"/>
+      <circle class="circuit-node" cx="620" cy="240" r="4"/>
+      <circle class="circuit-node" cx="860" cy="600" r="4"/>
+      <circle class="circuit-node" cx="540" cy="420" r="4"/>
+      <circle class="circuit-node" cx="180" cy="700" r="4"/>
+      <circle class="circuit-node" cx="460" cy="520" r="4"/>
+    </svg>
+  </div>
+
+  <div class="hero-container">
+    <p class="hero-eyebrow reveal">Bonjour, je suis</p>
+    <h1 class="hero-name reveal">Dina Fitiavana ROBSON</h1>
+
+    <h2 class="hero-role reveal">
+      <span class="role-static">Software Engineer &amp; </span><span class="role-rotator" id="roleRotator">Full-Stack Developer</span><span class="role-cursor">|</span>
+    </h2>
+
+    <p class="hero-text reveal">
+      Étudiant en 3<sup>e</sup> année Informatique — Génie Logiciel à Antananarivo, passionné par le développement web
+      et logiciel, les bases de données et le Machine Learning. Autonome, curieux et orienté vers la résolution de
+      problèmes, actuellement à la recherche d'un stage.
+    </p>
+
+    <div class="hero-stack reveal">
+      <span class="stack-item">Python</span>
+      <span class="stack-dot">•</span>
+      <span class="stack-item">Django</span>
+      <span class="stack-dot">•</span>
+      <span class="stack-item">React</span>
+      <span class="stack-dot">•</span>
+      <span class="stack-item">Java</span>
+      <span class="stack-dot">•</span>
+      <span class="stack-item">PostgreSQL</span>
+      <span class="stack-dot">•</span>
+      <span class="stack-item">JavaScript</span>
+    </div>
+
+    <div class="hero-cta reveal">
+      <a href="#projects" class="btn-dr btn-dr-primary">Voir mes projets</a>
+      <a href="#contact" class="btn-dr btn-dr-outline">Me contacter</a>
+      <a href="assets/CV_DinaFitiavana_ROBSON.pdf" class="btn-dr btn-dr-ghost" download>
+        <i class="bi bi-download"></i> Télécharger mon CV
+      </a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Défiler vers le bas">
+    <span></span>
+  </a>
+</header>
+
+<main>
+
+<!-- ======================================================
+     À PROPOS
+====================================================== -->
+<section id="about" class="section">
+  <div class="section-container">
+    <p class="section-kicker reveal">01 — À propos</p>
+    <h2 class="section-title reveal">Qui suis-je</h2>
+
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <div class="photo-frame">
+          <img src="images/profile.jpg" alt="Photo de Dina Fitiavana ROBSON">
+        </div>
+      </div>
+
+      <div class="about-content reveal">
+        <p class="about-lead">
+          Étudiant en 3<sup>e</sup> année Informatique, spécialisation Génie Logiciel, à l'Inside University
+          d'Antananarivo.
+        </p>
+        <p>
+          Je m'intéresse au développement web et logiciel, à l'intelligence artificielle, aux bases de données
+          et à la conception d'applications modernes. J'aime comprendre comment un système est construit de bout
+          en bout — de l'architecture backend à l'expérience utilisateur — et j'apprends continuellement de
+          nouvelles technologies pour résoudre des problèmes concrets.
+        </p>
+        <p>
+          Autonome, polyvalent et curieux, je suis actuellement à la recherche d'un stage pour mettre mes
+          compétences en pratique au sein d'une équipe.
+        </p>
+
+        <div class="about-info">
+          <div class="info-row"><i class="bi bi-geo-alt"></i><span>Soavina 102, Antananarivo, Madagascar</span></div>
+          <div class="info-row"><i class="bi bi-mortarboard"></i><span>Licence 3 Informatique — Génie Logiciel, Inside University</span></div>
+          <div class="info-row"><i class="bi bi-translate"></i><span>Malagasy (natif) · Français (bon niveau) · Anglais (intermédiaire) · Mandarin (notions)</span></div>
+        </div>
+
+        <a href="assets/CV_DinaFitiavana_ROBSON.pdf" class="btn-dr btn-dr-primary" download>
+          <i class="bi bi-download"></i> Télécharger mon CV
+        </a>
+      </div>
+    </div>
+
+    <div class="about-stats reveal">
+      <div class="stat-box">
+        <span class="stat-number" data-target="3" data-suffix="+">0</span>
+        <span class="stat-label">années d'apprentissage informatique</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number" data-target="4" data-suffix="+">0</span>
+        <span class="stat-label">projets académiques réalisés</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number" data-target="15" data-suffix="+">0</span>
+        <span class="stat-label">technologies pratiquées</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     COMPÉTENCES
+====================================================== -->
+<section id="skills" class="section section-alt">
+  <div class="section-container">
+    <p class="section-kicker reveal">02 — Compétences</p>
+    <h2 class="section-title reveal">Mes compétences</h2>
+    <p class="section-intro reveal">Un aperçu des langages, frameworks et outils que j'utilise pour concevoir et
+      développer des applications complètes, du frontend au backend.</p>
+
+    <div class="skills-grid">
+
+      <div class="skill-category reveal">
+        <h3><i class="bi bi-window"></i> Front-End</h3>
+        <div class="skill-bar-row"><span class="skill-name">HTML / CSS</span><div class="skill-bar"><div class="skill-fill" data-level="92"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" data-level="85"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">Bootstrap</span><div class="skill-bar"><div class="skill-fill" data-level="88"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">React.js</span><div class="skill-bar"><div class="skill-fill" data-level="78"></div></div></div>
+      </div>
+
+      <div class="skill-category reveal">
+        <h3><i class="bi bi-hdd-stack"></i> Back-End</h3>
+        <div class="skill-bar-row"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-level="90"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">Django / DRF</span><div class="skill-bar"><div class="skill-fill" data-level="85"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">PHP</span><div class="skill-bar"><div class="skill-fill" data-level="70"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-fill" data-level="65"></div></div></div>
+      </div>
+
+      <div class="skill-category reveal">
+        <h3><i class="bi bi-code-slash"></i> Langages</h3>
+        <div class="skill-bar-row"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" data-level="80"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-level="90"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" data-level="85"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">C / C++</span><div class="skill-bar"><div class="skill-fill" data-level="68"></div></div></div>
+      </div>
+
+      <div class="skill-category reveal">
+        <h3><i class="bi bi-database"></i> Bases de données</h3>
+        <div class="skill-bar-row"><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div class="skill-fill" data-level="85"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">MySQL</span><div class="skill-bar"><div class="skill-fill" data-level="80"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">SQLite</span><div class="skill-bar"><div class="skill-fill" data-level="82"></div></div></div>
+      </div>
+
+      <div class="skill-category reveal">
+        <h3><i class="bi bi-cpu"></i> Machine Learning</h3>
+        <div class="skill-bar-row"><span class="skill-name">Scikit-learn</span><div class="skill-bar"><div class="skill-fill" data-level="75"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">Pandas / NumPy</span><div class="skill-bar"><div class="skill-fill" data-level="78"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">Streamlit</span><div class="skill-bar"><div class="skill-fill" data-level="72"></div></div></div>
+      </div>
+
+      <div class="skill-category reveal">
+        <h3><i class="bi bi-tools"></i> Outils</h3>
+        <div class="skill-bar-row"><span class="skill-name">Git / GitHub</span><div class="skill-bar"><div class="skill-fill" data-level="88"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">VS Code</span><div class="skill-bar"><div class="skill-fill" data-level="90"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">Figma</span><div class="skill-bar"><div class="skill-fill" data-level="65"></div></div></div>
+        <div class="skill-bar-row"><span class="skill-name">JavaFX / Maven</span><div class="skill-bar"><div class="skill-fill" data-level="70"></div></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     PROJETS
+====================================================== -->
+<section id="projects" class="section">
+  <div class="section-container">
+    <p class="section-kicker reveal">03 — Projets</p>
+    <h2 class="section-title reveal">Mes projets</h2>
+    <p class="section-intro reveal">Une sélection de projets académiques couvrant le développement web full-stack,
+      les applications desktop et le Machine Learning.</p>
+
+    <div class="project-filters reveal" id="projectFilters">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="desktop">Desktop</button>
+      <button class="filter-btn" data-filter="ia">IA / Machine Learning</button>
+      <button class="filter-btn" data-filter="backend">Backend</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+
+      <article class="project-card reveal" data-category="web backend">
+        <div class="project-visual" data-project="smartcampus">
+          <span class="project-visual-tag">SmartCampus</span>
+        </div>
+        <div class="project-body">
+          <h3>SmartCampus</h3>
+          <p>Plateforme intelligente centralisant la gestion universitaire : étudiants, enseignants, notes,
+            présences, paiements, emploi du temps, annonces et espaces dédiés selon les rôles.</p>
+          <ul class="project-features">
+            <li>API REST sécurisée avec authentification et gestion des rôles</li>
+            <li>Architecture frontend / backend complète</li>
+          </ul>
+          <div class="project-tags">
+            <span>Django REST Framework</span><span>React.js</span><span>PostgreSQL</span><span>Axios</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="web backend">
+        <div class="project-visual" data-project="skillmap">
+          <span class="project-visual-tag">SkillMap</span>
+        </div>
+        <div class="project-body">
+          <h3>SkillMap Madagascar</h3>
+          <p>Plateforme permettant aux étudiants et jeunes diplômés de valoriser leurs compétences et de faciliter
+            la mise en relation avec des entreprises.</p>
+          <ul class="project-features">
+            <li>Génération automatique de documents PDF</li>
+            <li>Tableaux de bord et visualisations de données</li>
+          </ul>
+          <div class="project-tags">
+            <span>Django 5</span><span>PostgreSQL</span><span>Chart.js</span><span>ReportLab</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="ia">
+        <div class="project-visual" data-project="smartuniversity">
+          <span class="project-visual-tag">Smart University</span>
+        </div>
+        <div class="project-body">
+          <h3>Smart University — Prédiction de réussite</h3>
+          <p>Projet de Machine Learning prédisant la situation académique d'un étudiant (abandon, inscrit,
+            diplômé) à partir de données académiques, avec comparaison de plusieurs modèles.</p>
+          <ul class="project-features">
+            <li>Comparaison Régression Logistique, MLP, Random Forest</li>
+            <li>Application interactive de prédiction avec Streamlit</li>
+          </ul>
+          <div class="project-tags">
+            <span>Scikit-learn</span><span>Pandas</span><span>Streamlit</span><span>Matplotlib</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="desktop ia">
+        <div class="project-visual" data-project="legalassist">
+          <span class="project-visual-tag">LegalAssist AI</span>
+        </div>
+        <div class="project-body">
+          <h3>LegalAssist Madagascar AI</h3>
+          <p>Application desktop facilitant la recherche d'informations liées au droit malagasy, basée sur une IA
+            fonctionnant localement et une base documentaire juridique spécialisée.</p>
+          <ul class="project-features">
+            <li>Intégration d'un système d'IA offline</li>
+            <li>Interface desktop JavaFX et traitement documentaire</li>
+          </ul>
+          <div class="project-tags">
+            <span>Java</span><span>JavaFX</span><span>Maven</span><span>IA offline</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     FORMATION
+====================================================== -->
+<section id="education" class="section section-alt">
+  <div class="section-container">
+    <p class="section-kicker reveal">04 — Formation</p>
+    <h2 class="section-title reveal">Mon parcours académique</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2025 — 2026</span>
+          <h3>Licence 3 Informatique — Génie Logiciel</h3>
+          <p>Inside University, Antananarivo</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2024 — 2025</span>
+          <h3>Licence 2 Informatique</h3>
+          <p>Inside University, Antananarivo</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2023 — 2024</span>
+          <h3>Licence 1 Informatique</h3>
+          <p>Inside University, Antananarivo</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2022 — 2023</span>
+          <h3>Licence 1 Économie</h3>
+          <p>Université d'Antananarivo</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2022</span>
+          <h3>Baccalauréat série D</h3>
+          <p>Madagascar</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     CERTIFICATIONS + SOFT SKILLS
+====================================================== -->
+<section id="experience" class="section">
+  <div class="section-container">
+    <p class="section-kicker reveal">05 — Certifications</p>
+    <h2 class="section-title reveal">Formations complémentaires</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <i class="bi bi-code-square"></i>
+        <h3>HTML, CSS, JavaScript</h3>
+        <p>Orange Digital Center</p>
+      </div>
+      <div class="cert-card reveal">
+        <i class="bi bi-palette"></i>
+        <h3>UI / UX Design</h3>
+        <p>Orange Digital Center</p>
+      </div>
+      <div class="cert-card reveal">
+        <i class="bi bi-filetype-py"></i>
+        <h3>Python</h3>
+        <p>Orange Digital Center</p>
+      </div>
+      <div class="cert-card reveal">
+        <i class="bi bi-cup-hot"></i>
+        <h3>Java</h3>
+        <p>Orange Digital Center</p>
+      </div>
+    </div>
+
+    <p class="section-kicker reveal soft-kicker">06 — Qualités</p>
+    <h2 class="section-title reveal">Comment je travaille</h2>
+
+    <div class="soft-grid">
+      <div class="soft-card soft-featured reveal">
+        <i class="bi bi-lightbulb"></i>
+        <h3>Orienté résolution de problèmes</h3>
+        <p>Ma priorité : comprendre le problème réel avant de coder la solution.</p>
+      </div>
+      <div class="soft-card reveal">
+        <i class="bi bi-graph-up-arrow"></i>
+        <h3>Esprit analytique</h3>
+      </div>
+      <div class="soft-card reveal">
+        <i class="bi bi-book"></i>
+        <h3>Apprentissage continu</h3>
+      </div>
+      <div class="soft-card reveal">
+        <i class="bi bi-people"></i>
+        <h3>Travail en équipe</h3>
+      </div>
+      <div class="soft-card reveal">
+        <i class="bi bi-stars"></i>
+        <h3>Créativité</h3>
+      </div>
+      <div class="soft-card reveal">
+        <i class="bi bi-arrow-repeat"></i>
+        <h3>Adaptabilité</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     CONTACT
+====================================================== -->
+<section id="contact" class="section section-alt">
+  <div class="section-container">
+    <p class="section-kicker reveal">07 — Contact</p>
+    <h2 class="section-title reveal">Travaillons ensemble</h2>
+    <p class="section-intro reveal">À la recherche d'un stage en développement web, logiciel ou data. N'hésitez pas
+      à me contacter.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a href="mailto:robsondinafitiavana@gmail.com" class="contact-row">
+          <i class="bi bi-envelope"></i>
+          <div><span class="contact-label">Email</span><span class="contact-value">robsondinafitiavana@gmail.com</span></div>
+        </a>
+        <a href="tel:+261330303895" class="contact-row">
+          <i class="bi bi-telephone"></i>
+          <div><span class="contact-label">Téléphone</span><span class="contact-value">03 30 303 895</span></div>
+        </a>
+        <div class="contact-row">
+          <i class="bi bi-geo-alt"></i>
+          <div><span class="contact-label">Localisation</span><span class="contact-value">Soavina 102, Antananarivo</span></div>
+        </div>
+        <a href="https://github.com/" target="_blank" rel="noopener" class="contact-row">
+          <i class="bi bi-github"></i>
+          <div><span class="contact-label">GitHub</span><span class="contact-value">github.com/dina-robson</span></div>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-row">
+          <i class="bi bi-linkedin"></i>
+          <div><span class="contact-label">LinkedIn</span><span class="contact-value">linkedin.com/in/dina-robson</span></div>
+        </a>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-field">
+          <input type="text" id="cf-name" name="name" placeholder=" " required>
+          <label for="cf-name">Nom</label>
+          <span class="field-error">Merci d'indiquer votre nom.</span>
+        </div>
+        <div class="form-field">
+          <input type="email" id="cf-email" name="email" placeholder=" " required>
+          <label for="cf-email">Email</label>
+          <span class="field-error">Merci d'indiquer une adresse email valide.</span>
+        </div>
+        <div class="form-field">
+          <input type="text" id="cf-subject" name="subject" placeholder=" " required>
+          <label for="cf-subject">Sujet</label>
+          <span class="field-error">Merci d'indiquer un sujet.</span>
+        </div>
+        <div class="form-field">
+          <textarea id="cf-message" name="message" rows="5" placeholder=" " required></textarea>
+          <label for="cf-message">Message</label>
+          <span class="field-error">Merci d'écrire un message.</span>
+        </div>
+        <button type="submit" class="btn-dr btn-dr-primary btn-full">
+          <span>Envoyer</span> <i class="bi bi-send"></i>
+        </button>
+        <p class="form-success" id="formSuccess"><i class="bi bi-check-circle"></i> Message envoyé — merci, je vous répondrai rapidement !</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+<footer class="dr-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-name">Dina Fitiavana ROBSON</span>
+      <span class="footer-role">Software Engineer &amp; Full-Stack Developer</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:robsondinafitiavana@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Dina Fitiavana ROBSON — Tous droits réservés.</p>
+</footer>
+
+<!-- Back to top -->
+<button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
